@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="no-js bg theme-dark" lang="zh-CN">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>
+    Alone
+  </title>
+  <link id="style" rel="stylesheet" href="/css/bootstrap.min.css?v=3.0">
+  <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
+  <link rel="stylesheet" href="http://localhost:4000/css/prism.css?v=3.0">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <style>
+    @font-face {
+      font-family: MFShangHei;
+      font-display: auto;
+      font-weight: 400;
+      src: url(/css/fonts/MFShangHei.otf) format('TrueType')
+    }
+
+    @font-face {
+      font-family: 'iconfont';
+      /* Project id 1780897 */
+      src: url('//at.alicdn.com/t/font_1780897_bp6na77o3v9.woff2?t=1622818821654') format('woff2'),
+        url('//at.alicdn.com/t/font_1780897_bp6na77o3v9.woff?t=1622818821654') format('woff'),
+        url('//at.alicdn.com/t/font_1780897_bp6na77o3v9.ttf?t=1622818821654') format('truetype');
+    }
+
+    .iconfont {
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Alone" type="application/atom+xml">
+</head>
+  <body>
+    <style>html.bg{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}.cool-transparent .off-screen+* .app-content-body{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}@media (max-width:767px){html.bg{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}.cool-transparent .off-screen+* .app-content-body{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}}</style>
+      <div id="Alone" class="app app-aside-fix container app-header-fixed">
+        <header class="row app-header navbar box-shadow-bottom-lg bg-white" role="menu">
+  <div class="col-md-2 text-ellipsis navbar-header">
+    <button class="pull-right visible-xs" ui-toggle-class="show animated animated-lento fadeIn"
+      target=".headr-sreach">
+      <span class="menu-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </span>
+    </button>
+    <button class="pull-left visible-xs active" ui-toggle-class="off-screen animated" target=".app-aside"
+      ui-scroll="app">
+      <span class="menu-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </span>
+    </button>
+    <a target="_blank" rel="noopener" href="https://blog.hclonely.com/" class="navbar-logo hidden-folded font-ShangHei">晴天雨天</a>
+  </div>
+  <div class="col-md-3 pos-rlt header-sreach">
+    <form id="searchform1" class="searchform navbar-form navbar-form-sm navbar-left shift" method="post" role="search">
+      <div class="form-group">
+        <div class="input-group rounded bg-white-pure box-shadow-wrap-normal"><input autocomplete="off"
+            id="local-search-input" type="search" name="s"
+            class="transparent rounded form-control input-sm no-borders padder" required="" placeholder="输入关键词搜索…">
+          <ul id="search_tips_drop" class="small-scroll-bar dropdown-menu hide" style="display:block;top:30px;left:0">
+          </ul><span id="search_submit" class="transparent input-group-btn"><button type="button"
+              class="transparent btn btn-sm"><span class="feathericons" id="icon-search"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-search">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg></span><span class="feathericons animate-spin hide" id="spin-search"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-loader">
+                  <line x1="12" y1="2" x2="12" y2="6"></line>
+                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                  <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                  <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                  <line x1="2" y1="12" x2="6" y2="12"></line>
+                  <line x1="18" y1="12" x2="22" y2="12"></line>
+                  <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                  <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                </svg></span></button></span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-7 pos-rlt header-nav">
+    <nav class="nav-primary-menu font-ShangHei">
+      <ul class="nav navbar-nav menu-list">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">主页</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">归档</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">分类</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">心情</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">关于</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-item-link">更多</a>
+            
+              <nav class="menus_item_child" style="top: 50px;">
+                
+                  <li>
+                    <a href="/anime" class="nav-item-link">漫画库</a>
+                  </li>
+                
+                  <li>
+                    <a href="/media" class="nav-item-link">媒体库</a>
+                  </li>
+                
+                  <li>
+                    <a href="/markdown" class="nav-item-link">文档</a>
+                  </li>
+                
+              </nav>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+        <main class="ori-container row post">
+    <aside class="app-aside hidden-xs col-md-3">
+    <div class="aside-wrap" layout="column">
+        <div class="navi-wrap scroll-y scroll-hide" flex>
+            <div class="user-card bg-white" id="aside-user">
+                <div class="user-card-image" style="background-image: url(/img/back.jpg);"></div>
+                <div class="user-card-avatar">
+                    <figure class="avatar avatar-xxl">
+                        <img src="/img/avatar.jpg">
+                    </figure>
+                </div>
+                <div class="user-card-content font-ShangHei">
+                    <h5 class="user-name">晴天</h5>
+                    <blockquote class="no-padder signature">
+                        <span style="margin-bottom: 5px;">私密日记本</span>
+                    </blockquote>
+                    <div class="user-contact">
+                        <a title="GitHub" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe6a0;</i></a>
+                        <a title="bilibili" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe69c;</i></a>
+                        <a title="weixin" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe6a9;</i></a>
+                        <a title="weixin" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe615;</i></a>
+                        <a title="weixin" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe603;</i></a>
+                    </div>
+                </div>
+            </div>
+            <aside class="card-widget side-categories bg-white" id="aside-user">
+                <div class="side-top">
+                    <i class="iconfont">&#xe667;</i>
+                    <h3>分类目录</h3>
+                </div>
+                <div class="side-mian">
+                    <ul class="categories-box">
+                        
+                            <li><a href="">技术笔记<span>4</span></a></li>
+                        
+                            <li><a href="">有趣分享<span>1</span></a></li>
+                        
+                    </ul>
+                </div>
+            </aside>
+            <aside class="card-widget side-categories bg-white" id="aside-user">
+                <div class="side-top">
+                    <i class="iconfont">&#xe667;</i>
+                    <h3>最近发布</h3>
+                </div>
+                <div class="side-mian">
+
+                </div>
+            </aside>
+        </div>
+    </div>
+</aside>
+        <section class="app-mian col-md-9">
+            <div class="layout layout_post">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-list"><a href="/">首页</a></li>
+                    <li class="breadcrumbs-list"><a href="">
+                        
+                            技术笔记
+                        
+                    </a></li>
+                    <li class="breadcrumbs-list"><a href="">Hexo笔记及过程记录</a></li>
+                </ul>
+                <div class="title-info font-ShangHei">
+                    <h2 class="card-title text-w-30">Hexo笔记及过程记录</h2>
+                    <div class="card-info">
+                        <div class="card-subtitle text-gray clear">
+                            <i class="iconfont">&#xe65f;</i><span>2021-05-28</span>
+                            <i class="iconfont">&#xe705;</i><span>253</span>
+                            <i class="iconfont">&#xe737;</i><span>西红柿鸡蛋</span>
+                            <i class="iconfont">&#xe667;</i><span>
+                                
+                                    技术笔记
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <article class="post-content" id="1027">
+                    <h2 id="目前已安装插件"><a href="#目前已安装插件" class="headerlink" title="目前已安装插件"></a>目前已安装插件</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="代码高亮的方法"><a href="#代码高亮的方法" class="headerlink" title="代码高亮的方法"></a>代码高亮的方法</h2><p>PS：寻找一些好看的博客网站代码样式文件，直接copy过来（简单且粗暴）</p>
+<h2 id="Hexo一些常用命令"><a href="#Hexo一些常用命令" class="headerlink" title="Hexo一些常用命令"></a>Hexo一些常用命令</h2><pre class="language-cmd" data-language="cmd"><code class="language-cmd">hexo init [folder]  #新建一篇文章
+hexo generate   #生成静态页面
+hexo server   #启动服务器
+hexo deploy     #部署网站
+hexo clean      #清除缓存文件
+hexo --draft    #显示 source/_drafts 文件夹中的草稿文章
+hexo new page name  #新建一个自定义页面</code></pre>
+
+<h2 id="Hexo-分类，归档，标签页面知识点"><a href="#Hexo-分类，归档，标签页面知识点" class="headerlink" title="Hexo 分类，归档，标签页面知识点"></a>Hexo 分类，归档，标签页面知识点</h2><ul>
+<li>分类页page.esj</li>
+<li>归档页archive.ejs</li>
+<li>标签页tags.ejs</li>
+</ul>
+<p>输出分类目录标题</p>
+<pre class="language-html" data-language="html"><code class="language-html">&lt;% site.categories.map(function(category){  %&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>&lt;%= category.name %&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+&lt;% }) %&gt;</code></pre>
+
+<p>输出分类文章标题</p>
+<pre class="language-html" data-language="html"><code class="language-html">&lt;% site.categories.map(function(category){  %&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>&lt;%= category.name %&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    &lt;% category.posts.map(function(post){  %&gt;
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>&lt;%= post.name %&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+    &lt;% }) %&gt;
+&lt;% }) %&gt;</code></pre>
+
+<h2 id="Hexo-文章中插入图片的方法"><a href="#Hexo-文章中插入图片的方法" class="headerlink" title="Hexo 文章中插入图片的方法"></a>Hexo 文章中插入图片的方法</h2><p>一般用CDN，但考虑到我们内容并不多，所以我选择和文章放在一起。安装插件hexo-asset-image，把配置文件post_asset_folder改为true，这样新建文章的时候会在同目录下有个同名文件夹，把图片放到文件夹里面。使用以下命令来插入图片。</p>
+<p>1.安装插件</p>
+<pre class="language-html" data-language="html"><code class="language-html">npm install hexo-asset-image --save</code></pre>
+
+
+<p>2.修改配置文件_config.yml</p>
+<blockquote>
+<p>找到 post_asset_folder，把这个选项从false改成true</p>
+</blockquote>
+<p>3.生成文章</p>
+<pre class="language-python" data-language="python"><code class="language-python">hexo new Hello  <span class="token comment">#发现文章同文件夹里多出给同文章名的文件夹，把图片放到里面去引用就行了</span></code></pre>
+
+
+<p>4.找到插件内的index.js文件替换内容</p>
+<pre class="language-none"><code class="language-none">/node_modules/hexo-asset-image/index.js</code></pre>
+<pre class="language-java" data-language="java"><code class="language-java"><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> cheerio <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cheerio'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</span>
+function <span class="token function">getPosition</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> m<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> version <span class="token operator">=</span> <span class="token class-name">String</span><span class="token punctuation">(</span>hexo<span class="token punctuation">.</span>version<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hexo<span class="token punctuation">.</span>extend<span class="token punctuation">.</span>filter<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">'after_post_render'</span><span class="token punctuation">,</span> <span class="token function">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> config <span class="token operator">=</span> hexo<span class="token punctuation">.</span>config<span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>post_asset_folder<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> link <span class="token operator">=</span> data<span class="token punctuation">.</span>permalink<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>version<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> <span class="token class-name">Number</span><span class="token punctuation">(</span>version<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span>
+       <span class="token keyword">var</span> beginPos <span class="token operator">=</span> <span class="token function">getPosition</span><span class="token punctuation">(</span>link<span class="token punctuation">,</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span>
+       <span class="token keyword">var</span> beginPos <span class="token operator">=</span> <span class="token function">getPosition</span><span class="token punctuation">(</span>link<span class="token punctuation">,</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token comment">// In hexo 3.1.1, the permalink of "about" page is like ".../about/index.html".</span>
+    <span class="token keyword">var</span> endPos <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    link <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>beginPos<span class="token punctuation">,</span> endPos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> toprocess <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'excerpt'</span><span class="token punctuation">,</span> <span class="token string">'more'</span><span class="token punctuation">,</span> <span class="token string">'content'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> toprocess<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">var</span> key <span class="token operator">=</span> toprocess<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+ 
+      <span class="token keyword">var</span> $ <span class="token operator">=</span> cheerio<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        ignoreWhitespace<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        xmlMode<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        lowerCaseTags<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        decodeEntities<span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      $<span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>$<span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">// For windows style path, we replace '\' to '/'.</span>
+            <span class="token keyword">var</span> src <span class="token operator">=</span> $<span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'\\'</span><span class="token punctuation">,</span> <span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">/</span>http<span class="token punctuation">[</span>s<span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">.</span>*<span class="token operator">|</span>\<span class="token operator">/</span>\<span class="token operator">/</span><span class="token punctuation">.</span>*<span class="token operator">/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+               <span class="token operator">!</span><span class="token operator">/</span><span class="token operator">^</span>\s<span class="token operator">*</span>\<span class="token operator">/</span><span class="token operator">/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token comment">// For "about" page, the first part of "src" can't be removed.</span>
+              <span class="token comment">// In addition, to support multi-level local directory.</span>
+              <span class="token keyword">var</span> linkArray <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token function">function</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> elem <span class="token operator">!=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token keyword">var</span> srcArray <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token function">function</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> elem <span class="token operator">!=</span> <span class="token string">''</span> <span class="token operator">&amp;&amp;</span> elem <span class="token operator">!=</span> <span class="token string">'.'</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span><span class="token punctuation">(</span>srcArray<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                srcArray<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              src <span class="token operator">=</span> srcArray<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              $<span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">,</span> config<span class="token punctuation">.</span>root <span class="token operator">+</span> link <span class="token operator">+</span> src<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              console<span class="token punctuation">.</span>info<span class="token operator">&amp;&amp;</span>console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"update link as:--&gt;"</span><span class="token operator">+</span>config<span class="token punctuation">.</span>root <span class="token operator">+</span> link <span class="token operator">+</span> src<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span>info<span class="token operator">&amp;&amp;</span>console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"no src attr, skipped..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span>info<span class="token operator">&amp;&amp;</span>console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>$<span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      data<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> $<span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>5.引用文章图片</p>
+<pre class="language-none"><code class="language-none">![这是代替图片的文字，随便写](head.jpeg)</code></pre>
+                </article>
+            </div>
+        </section>
+</main>
+      </div>
+    </div>
+    <footer class="ori-footer">
+    <section id="scroll-top" class="btn btn-action" style="opacity: 1;">
+        <i class="icon icon-arrow-up"></i>
+    </section>
+    <div class="ori-container columns center">
+        <section class="ori-copyright">
+            <div class="foot-ellipsis">
+                <div class="github-badge">
+                    <a href="https://github.com/syfxlin/origami/" target="_blank" rel="external nofollow noopener noreferrer">
+                        <span class="ftspan1">Copyright</span>
+                        <span class="badge-subject bg-green">© 2020-2021 Alone</span>
+                    </a>
+                </div>
+                <div class="github-badge">
+                    <a href="https://github.com/syfxlin/origami/" target="_blank" rel="external nofollow noopener noreferrer">
+                        <span class="ftspan1">安全运行</span>
+                        <span class="badge-subject bg-blue">1 年 122 天 22 时 45 分 48 秒</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部流星进度条 -->
+    <div class="sp-progress"></div>
+
+</footer>
+<section>
+    
+        <div class="tools-toc">
+            <div id="toc-btn" class="false" title="显示文章目录(点击显示或隐藏)">
+                <i class="iconfont">&#xe712;</i>
+                <div class="toc">
+                    <ol class="toc-list"><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#%E7%9B%AE%E5%89%8D%E5%B7%B2%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-list-text">目前已安装插件</span></a><ol class="toc-list-child"><li class="toc-list-item toc-list-level-3"><a class="toc-list-link"><span class="toc-list-text"></span></a></li></ol></li><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-list-text">代码高亮的方法</span></a></li><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#Hexo%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-list-text">Hexo一些常用命令</span></a></li><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#Hexo-%E5%88%86%E7%B1%BB%EF%BC%8C%E5%BD%92%E6%A1%A3%EF%BC%8C%E6%A0%87%E7%AD%BE%E9%A1%B5%E9%9D%A2%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-list-text">Hexo 分类，归档，标签页面知识点</span></a></li><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#Hexo-%E6%96%87%E7%AB%A0%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-list-text">Hexo 文章中插入图片的方法</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+    
+</section>
+    <!-- waves按钮特效 -->
+<!-- <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script> -->
+
+<!-- 主题配置脚本 -->
+<!-- <script>
+var BLOG = { ROOT: '/', SHARE: , REWARD: false };
+</script> -->
+
+<!-- toc描点脚本库 -->
+<script src="/js/tocbot.min.js?v=3.0"></script>
+
+<!-- main博客脚本 -->
+<script src="/js/main.min.js?v=3.0" ></script>
+
+  </body>
+</html>

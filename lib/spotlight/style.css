@@ -1,0 +1,33 @@
+html,
+a {
+    display: inline-block
+}
+
+b {
+    display: block;
+    padding: 10px
+}
+
+button {
+    padding: 5px 10px
+}
+
+.spotlight-group img,
+.spotlight-group .image {
+    width: 30vw;
+    max-width: 165px;
+    margin: 1vh 10px;
+}
+
+.spotlight-group .image {
+    display: inline-block;
+    height: 20vw;
+    max-height: 155px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.spotlight.image {
+    cursor: pointer
+}

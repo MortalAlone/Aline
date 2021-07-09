@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="no-js bg theme-dark" lang="zh-CN">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>
+    Alone
+  </title>
+  <link id="style" rel="stylesheet" href="/css/bootstrap.min.css?v=3.0">
+  <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
+  <link rel="stylesheet" href="http://localhost:4000/css/prism.css?v=3.0">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <style>
+    @font-face {
+      font-family: MFShangHei;
+      font-display: auto;
+      font-weight: 400;
+      src: url(/css/fonts/MFShangHei.otf) format('TrueType')
+    }
+
+    @font-face {
+      font-family: 'iconfont';
+      /* Project id 1780897 */
+      src: url('//at.alicdn.com/t/font_1780897_bp6na77o3v9.woff2?t=1622818821654') format('woff2'),
+        url('//at.alicdn.com/t/font_1780897_bp6na77o3v9.woff?t=1622818821654') format('woff'),
+        url('//at.alicdn.com/t/font_1780897_bp6na77o3v9.ttf?t=1622818821654') format('truetype');
+    }
+
+    .iconfont {
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Alone" type="application/atom+xml">
+</head>
+  <body>
+    <style>html.bg{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}.cool-transparent .off-screen+* .app-content-body{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}@media (max-width:767px){html.bg{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}.cool-transparent .off-screen+* .app-content-body{background:url(https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@1.1.7/img/Butterfly/index.webp) center center no-repeat no-repeat fixed #6a6b6f;background-size:cover}}</style>
+      <div id="Alone" class="app app-aside-fix container app-header-fixed">
+        <header class="row app-header navbar box-shadow-bottom-lg bg-white" role="menu">
+  <div class="col-md-2 text-ellipsis navbar-header">
+    <button class="pull-right visible-xs" ui-toggle-class="show animated animated-lento fadeIn"
+      target=".headr-sreach">
+      <span class="menu-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </span>
+    </button>
+    <button class="pull-left visible-xs active" ui-toggle-class="off-screen animated" target=".app-aside"
+      ui-scroll="app">
+      <span class="menu-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </span>
+    </button>
+    <a target="_blank" rel="noopener" href="https://blog.hclonely.com/" class="navbar-logo hidden-folded font-ShangHei">晴天雨天</a>
+  </div>
+  <div class="col-md-3 pos-rlt header-sreach">
+    <form id="searchform1" class="searchform navbar-form navbar-form-sm navbar-left shift" method="post" role="search">
+      <div class="form-group">
+        <div class="input-group rounded bg-white-pure box-shadow-wrap-normal"><input autocomplete="off"
+            id="local-search-input" type="search" name="s"
+            class="transparent rounded form-control input-sm no-borders padder" required="" placeholder="输入关键词搜索…">
+          <ul id="search_tips_drop" class="small-scroll-bar dropdown-menu hide" style="display:block;top:30px;left:0">
+          </ul><span id="search_submit" class="transparent input-group-btn"><button type="button"
+              class="transparent btn btn-sm"><span class="feathericons" id="icon-search"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-search">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg></span><span class="feathericons animate-spin hide" id="spin-search"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-loader">
+                  <line x1="12" y1="2" x2="12" y2="6"></line>
+                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                  <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                  <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                  <line x1="2" y1="12" x2="6" y2="12"></line>
+                  <line x1="18" y1="12" x2="22" y2="12"></line>
+                  <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                  <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                </svg></span></button></span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-7 pos-rlt header-nav">
+    <nav class="nav-primary-menu font-ShangHei">
+      <ul class="nav navbar-nav menu-list">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">主页</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">归档</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">分类</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">心情</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">关于</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-item-link">更多</a>
+            
+              <nav class="menus_item_child" style="top: 50px;">
+                
+                  <li>
+                    <a href="/anime" class="nav-item-link">漫画库</a>
+                  </li>
+                
+                  <li>
+                    <a href="/media" class="nav-item-link">媒体库</a>
+                  </li>
+                
+                  <li>
+                    <a href="/markdown" class="nav-item-link">文档</a>
+                  </li>
+                
+              </nav>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+        <main class="ori-container row post">
+    <aside class="app-aside hidden-xs col-md-3">
+    <div class="aside-wrap" layout="column">
+        <div class="navi-wrap scroll-y scroll-hide" flex>
+            <div class="user-card bg-white" id="aside-user">
+                <div class="user-card-image" style="background-image: url(/img/back.jpg);"></div>
+                <div class="user-card-avatar">
+                    <figure class="avatar avatar-xxl">
+                        <img src="/img/avatar.jpg">
+                    </figure>
+                </div>
+                <div class="user-card-content font-ShangHei">
+                    <h5 class="user-name">晴天</h5>
+                    <blockquote class="no-padder signature">
+                        <span style="margin-bottom: 5px;">私密日记本</span>
+                    </blockquote>
+                    <div class="user-contact">
+                        <a title="GitHub" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe6a0;</i></a>
+                        <a title="bilibili" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe69c;</i></a>
+                        <a title="weixin" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe6a9;</i></a>
+                        <a title="weixin" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe615;</i></a>
+                        <a title="weixin" href="#" target="_blank" rel="external nofollow noopener noreferrer"><i
+                                class="iconfont">&#xe603;</i></a>
+                    </div>
+                </div>
+            </div>
+            <aside class="card-widget side-categories bg-white" id="aside-user">
+                <div class="side-top">
+                    <i class="iconfont">&#xe667;</i>
+                    <h3>分类目录</h3>
+                </div>
+                <div class="side-mian">
+                    <ul class="categories-box">
+                        
+                            <li><a href="">技术笔记<span>4</span></a></li>
+                        
+                            <li><a href="">有趣分享<span>1</span></a></li>
+                        
+                    </ul>
+                </div>
+            </aside>
+            <aside class="card-widget side-categories bg-white" id="aside-user">
+                <div class="side-top">
+                    <i class="iconfont">&#xe667;</i>
+                    <h3>最近发布</h3>
+                </div>
+                <div class="side-mian">
+
+                </div>
+            </aside>
+        </div>
+    </div>
+</aside>
+        <section class="app-mian col-md-9">
+            <div class="layout layout_post">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-list"><a href="/">首页</a></li>
+                    <li class="breadcrumbs-list"><a href="">
+                        
+                            技术笔记
+                        
+                    </a></li>
+                    <li class="breadcrumbs-list"><a href="">Python 数据库知识点</a></li>
+                </ul>
+                <div class="title-info font-ShangHei">
+                    <h2 class="card-title text-w-30">Python 数据库知识点</h2>
+                    <div class="card-info">
+                        <div class="card-subtitle text-gray clear">
+                            <i class="iconfont">&#xe65f;</i><span>2021-06-05</span>
+                            <i class="iconfont">&#xe705;</i><span>253</span>
+                            <i class="iconfont">&#xe737;</i><span>西红柿鸡蛋</span>
+                            <i class="iconfont">&#xe667;</i><span>
+                                
+                                    技术笔记
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <article class="post-content" id="1027">
+                    <h2 id="SQL知识点"><a href="#SQL知识点" class="headerlink" title="SQL知识点"></a>SQL知识点</h2><p>Mysql 10个字节相当于10个汉字</p>
+<h1 id="Python-SQLite"><a href="#Python-SQLite" class="headerlink" title="Python - SQLite"></a>Python - SQLite</h1><h2 id="SQLite-语法"><a href="#SQLite-语法" class="headerlink" title="SQLite 语法"></a>SQLite 语法</h2><pre class="language-python" data-language="python"><code class="language-python">execute<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#执行sql语句</span>
+scroll<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#游标滚动</span>
+close<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#关闭游标</span>
+executemany<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#执行多条sql语句</span>
+fetchone<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#从结果中取一条记录</span>
+fetchmany<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#从结果中取多条记录</span>
+fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">#从结果中取出多条记录</span></code></pre>
+
+<h2 id="SQLite-基本操作"><a href="#SQLite-基本操作" class="headerlink" title="SQLite 基本操作"></a>SQLite 基本操作</h2><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> sqlite3
+
+conn <span class="token operator">=</span> sqlite3<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token string">'test.db'</span><span class="token punctuation">)</span>      <span class="token comment">#如果数据库不存在，那么它就会被创建，最后将返回一个数据库对象</span>
+
+c <span class="token operator">=</span> conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token comment">#创建一个游标对象</span>
+
+c <span class="token operator">=</span> conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'CREATE TABLE COMPANY (id integer primary key ,name varchar(20),age integer)'</span><span class="token punctuation">)</span>     <span class="token comment">#创建一个数据表</span>
+
+data <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"1,'leon',22"</span><span class="token punctuation">)</span>
+c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'INSERT INTO COMPANY VALUES (%s)'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># 插入数据</span>
+
+c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'INSERT INTO COMPANY VALUES (?,?,?)'</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'name2'</span><span class="token punctuation">,</span><span class="token number">28</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># 插入数据第二种方法</span>
+
+<span class="token comment"># 还可以使用executemany()执行多条sql语句，使用executmany()比循环使用excute()执行多条sql语句效率高。</span>
+c<span class="token punctuation">.</span>executemany<span class="token punctuation">(</span><span class="token string">'INSERT INTO COMPANY VALUES (?,?,?)'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'name3'</span><span class="token punctuation">,</span><span class="token number">19</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'name4'</span><span class="token punctuation">,</span><span class="token number">26</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'SELECT * FROM COMPANY'</span><span class="token punctuation">)</span>     <span class="token comment">#查询数据</span>
+res <span class="token operator">=</span> c<span class="token punctuation">.</span>fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 取全部数据</span>
+res <span class="token operator">=</span> c<span class="token punctuation">.</span>fetchone<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 取第一条数据</span>
+<span class="token keyword">for</span> line <span class="token keyword">in</span> res<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"循环fetchall的值&gt;&gt;&gt;"</span><span class="token punctuation">,</span>line<span class="token punctuation">)</span>
+
+
+c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'UPDATE COMPANY SET name=? WHERE id=? '</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">'cat'</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment"># 修改数据</span>
+c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'DELETE FROM COMPANY WHERE id=1'</span><span class="token punctuation">)</span>                     <span class="token comment"># 删除数据</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"更新的总行数 :"</span><span class="token punctuation">,</span> conn<span class="token punctuation">.</span>total_changes<span class="token punctuation">)</span>                       <span class="token comment"># 结果</span>
+
+conn<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">#处理事务提交</span>
+
+conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">#关闭游标</span></code></pre>
+
+<h2 id="SQLite-技巧"><a href="#SQLite-技巧" class="headerlink" title="SQLite 技巧"></a>SQLite 技巧</h2><h3 id="连接数据库方法"><a href="#连接数据库方法" class="headerlink" title="连接数据库方法"></a>连接数据库方法</h3><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">sqlitetest</span><span class="token punctuation">(</span>txt<span class="token punctuation">,</span>footer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    cx <span class="token operator">=</span> sqlite3<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token string">"D:\Python-Test\StuProject\db.sqlite3"</span><span class="token punctuation">)</span>
+    cu <span class="token operator">=</span> cx<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sql <span class="token operator">=</span> <span class="token triple-quoted-string string">'''insert into'comment_comment'(txt,'footer') values (\"%s\",\"%s\");'''</span> <span class="token operator">%</span> <span class="token punctuation">(</span>txt<span class="token punctuation">,</span> footer<span class="token punctuation">)</span>  <span class="token comment"># 字符串插入字符串 sql</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        cu<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>sql<span class="token punctuation">)</span>
+        cx<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"D:\Python-Test\StuProject\dblog.txt"</span><span class="token punctuation">,</span><span class="token string">'a+'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            log <span class="token operator">=</span> <span class="token triple-quoted-string string">'''执行 sql 发生错误:%s \n 输出:%s'''</span><span class="token operator">%</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span>sql<span class="token punctuation">)</span>
+            <span class="token comment">#f.write(log)</span>
+        <span class="token keyword">pass</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>cu<span class="token punctuation">)</span></code></pre>
+
+
+
+
+
+<h3 id="插入多行数据"><a href="#插入多行数据" class="headerlink" title="插入多行数据"></a>插入多行数据</h3><pre class="language-python" data-language="python"><code class="language-python">data_ToBeInserted <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"170140009,'凡','男',20,'人文'"</span><span class="token punctuation">,</span><span class="token string">"170140000,'翔','男',20,'GIS'"</span><span class="token punctuation">,</span><span class="token string">"170140001,'豪','男',20,'GIS'"</span><span class="token punctuation">,</span><span class="token string">"170140002,'飞','男',20,'人文'"</span><span class="token punctuation">,</span><span class="token string">"170100001,'亮','男',27,'海棠二楼'"</span><span class="token punctuation">]</span>
+sql_insert <span class="token operator">=</span> <span class="token string">"INSERT INTO Student VALUES"</span>   <span class="token comment">#SQL语句一</span>
+sql_values <span class="token operator">=</span> <span class="token string">""</span>     <span class="token comment">#SQL语句二</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token builtin">len</span><span class="token punctuation">(</span>data_ToBeInserted<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>   <span class="token comment">#列表下标索引，一一提取一行数据</span>
+    sql_values <span class="token operator">+=</span> <span class="token string">'('</span>                       <span class="token comment">#增加execute语句所需的左括号</span>
+    sql_values <span class="token operator">+=</span> data_ToBeInserted<span class="token punctuation">[</span>i<span class="token punctuation">]</span>      <span class="token comment">#插入数据</span>
+    sql_values <span class="token operator">+=</span> <span class="token string">'),'</span>                      <span class="token comment">#右括号</span>
+sql_values <span class="token operator">=</span> sql_values<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>          <span class="token comment">#去除最后一行数据的逗号，也可replace为分号</span>
+sql_todo <span class="token operator">=</span> sql_insert <span class="token operator">+</span> sql_values</code></pre>
+
+<h3 id="判断cursor的结果是否为空"><a href="#判断cursor的结果是否为空" class="headerlink" title="判断cursor的结果是否为空"></a>判断cursor的结果是否为空</h3><pre class="language-python" data-language="python"><code class="language-python">db <span class="token operator">=</span> sqlite3<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token string">"test/user.db"</span><span class="token punctuation">)</span>
+c<span class="token operator">=</span>db<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+cursor<span class="token operator">=</span>c<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"select info,flag,result from user  where info='XXX'"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span>cursor<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+
+
+                </article>
+            </div>
+        </section>
+</main>
+      </div>
+    </div>
+    <footer class="ori-footer">
+    <section id="scroll-top" class="btn btn-action" style="opacity: 1;">
+        <i class="icon icon-arrow-up"></i>
+    </section>
+    <div class="ori-container columns center">
+        <section class="ori-copyright">
+            <div class="foot-ellipsis">
+                <div class="github-badge">
+                    <a href="https://github.com/syfxlin/origami/" target="_blank" rel="external nofollow noopener noreferrer">
+                        <span class="ftspan1">Copyright</span>
+                        <span class="badge-subject bg-green">© 2020-2021 Alone</span>
+                    </a>
+                </div>
+                <div class="github-badge">
+                    <a href="https://github.com/syfxlin/origami/" target="_blank" rel="external nofollow noopener noreferrer">
+                        <span class="ftspan1">安全运行</span>
+                        <span class="badge-subject bg-blue">1 年 122 天 22 时 45 分 48 秒</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部流星进度条 -->
+    <div class="sp-progress"></div>
+
+</footer>
+<section>
+    
+        <div class="tools-toc">
+            <div id="toc-btn" class="false" title="显示文章目录(点击显示或隐藏)">
+                <i class="iconfont">&#xe712;</i>
+                <div class="toc">
+                    <ol class="toc-list"><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#SQL%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-list-text">SQL知识点</span></a></li></ol></li><li class="toc-list-item toc-list-level-1"><a class="toc-list-link" href="#Python-SQLite"><span class="toc-list-text">Python - SQLite</span></a><ol class="toc-list-child"><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#SQLite-%E8%AF%AD%E6%B3%95"><span class="toc-list-text">SQLite 语法</span></a></li><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#SQLite-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-list-text">SQLite 基本操作</span></a></li><li class="toc-list-item toc-list-level-2"><a class="toc-list-link" href="#SQLite-%E6%8A%80%E5%B7%A7"><span class="toc-list-text">SQLite 技巧</span></a><ol class="toc-list-child"><li class="toc-list-item toc-list-level-3"><a class="toc-list-link" href="#%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%B9%E6%B3%95"><span class="toc-list-text">连接数据库方法</span></a></li><li class="toc-list-item toc-list-level-3"><a class="toc-list-link" href="#%E6%8F%92%E5%85%A5%E5%A4%9A%E8%A1%8C%E6%95%B0%E6%8D%AE"><span class="toc-list-text">插入多行数据</span></a></li><li class="toc-list-item toc-list-level-3"><a class="toc-list-link" href="#%E5%88%A4%E6%96%ADcursor%E7%9A%84%E7%BB%93%E6%9E%9C%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA"><span class="toc-list-text">判断cursor的结果是否为空</span></a></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+    
+</section>
+    <!-- waves按钮特效 -->
+<!-- <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script> -->
+
+<!-- 主题配置脚本 -->
+<!-- <script>
+var BLOG = { ROOT: '/', SHARE: , REWARD: false };
+</script> -->
+
+<!-- toc描点脚本库 -->
+<script src="/js/tocbot.min.js?v=3.0"></script>
+
+<!-- main博客脚本 -->
+<script src="/js/main.min.js?v=3.0" ></script>
+
+  </body>
+</html>
